@@ -5,7 +5,10 @@ return (
     <div> 
         <Navbar />
         <p>{props.message}</p>
+    
     </div>
+
+    
 )
 }
 
