@@ -5,6 +5,7 @@ import Home from'./components/Home'
 import About from './pages/About'
 import Contact from'./pages/Contact'
 import { useState, useEffect} from 'react'
+import PersonalityDisplay from './components/PersonalityDisplay'
 // Is  best practice to just make a home component or do i make a pages folder with home in it?
 
 // http://localhost:5173/home
@@ -35,11 +36,12 @@ function App() {
         <div className="app-container">
         <Routes>
 
-      <Route path="/home" element ={<Home  message="Chamber of Misery"  />} />
+      <Route path="/home" element ={<Home />} />
       <Route path="/about" element ={<About />} />
       <Route path="/contact" element ={<Contact />} />
 
         </Routes>
+        <PersonalityDisplay data={data} />
         </div>
       </Router>
   
