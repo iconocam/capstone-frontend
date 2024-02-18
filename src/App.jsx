@@ -5,12 +5,19 @@ import Home from'./components/Home'
 import About from './pages/About'
 import Contact from'./pages/Contact'
 import { useState, useEffect} from 'react'
-import PersonalityDisplay from './components/PersonalityDisplay'
+import You from './pages/You'
+import Mind from './pages/Mind'
+import Us from '../src/pages/Us'
+import Navbar from './components/navBar'
+
 // Is  best practice to just make a home component or do i make a pages folder with home in it?
 
 // http://localhost:5173/home
 // http://localhost:5173/about
 // http://localhost:5173/contact
+// http://localhost:5173/you
+// http://localhost:5173/mind
+// http://localhost:5173/us
 
 // querying database to grab information with a useEffect hook
 //Fetch doesn't automatically return JSON so turn data into response.json
@@ -34,14 +41,18 @@ function App() {
   return (
       <Router>
         <div className="app-container">
+        <Navbar />
         <Routes>
 
-      <Route path="/home" element ={<Home />} />
+      <Route path="/home" element ={<Home data={data} />} />
       <Route path="/about" element ={<About />} />
       <Route path="/contact" element ={<Contact />} />
+      <Route path="/us" element ={<Us />} />
+      <Route path="/you" element ={<You />} />
+      <Route path="/mind" element ={<Mind />} />
 
         </Routes>
-        <PersonalityDisplay data={data} />
+        
         </div>
       </Router>
   

@@ -1,11 +1,10 @@
 import './Home.css'
-import Navbar from './navBar'
-const Home = (props) => {
+import PersonalityDisplay from './PersonalityDisplay'
+const Home = ({data}) => {
 return (
     <div> 
-        <Navbar />
-        <p>{props.message}</p>
-    
+        
+        <PersonalityDisplay data={data} />
     </div>
 
     

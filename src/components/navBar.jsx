@@ -5,7 +5,12 @@ import SubNavLinks from "./SubNavLinks";
 const Navbar = () => {
 return (
     <div id="Navbar">
+        <div id="INFJ">
     <p>INFJ</p>
+    </div>
+    <div className="sub">
+        <SubNavLinks text="Home" to="/home" />
+    </div>
     <div className="sub">
         <SubNavLinks text="You" to="/you" />
     </div>
@@ -15,6 +20,7 @@ return (
     <div className="sub">
         <SubNavLinks text="Us" to="/us" />
     </div>
+
     </div>
 );
 };

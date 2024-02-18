@@ -1,44 +1,59 @@
-
 #Navbar {
-
+  color: #fff; 
   border-radius: 8px;
-    box-shadow: 0 0 10px rgba(22, 133, 224, 0.747);
-    font-size: larger;
-    text-align: center;
-    margin: auto;
-    position: relative; 
-    overflow: hidden; 
-    border: 2px solid transparent; 
-  /* animation: lightRotation 10s linear infinite;  */
-
+  box-shadow: 0 4px 8px #3e3f3ffd; 
+  font-size: larger;
+  text-align: center;
+  padding: 5px; 
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease; 
 }
 
+#Navbar p {
+  font-size: 2em; 
+  font-weight: bold; 
+  color: #fcfbfbfb; 
+  margin-bottom: 10px;
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+#INFJ {
+  border: 2px solid black;
+  background: linear-gradient(45deg, #3498db, #2ecc71); 
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .sub a {
-  
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: #f5f0f0f1; 
-  position: relative; 
-  overflow: hidden; 
-  border: 5px solid black;
-  animation: lightRotation 4s linear infinite; 
-
+  color: #f5f0f0f1;
+  position: relative;
+  overflow: hidden;
+  border: 0px solid black;
+  border-radius: 5px; 
+  padding: 5px 10px; 
+  transition: background-color 0.3s ease; 
+  animation: glow 1.5s ease-in-out infinite;
 }
 
-@keyframes lightRotation {
-  0% {
-    border-color: red blue green purple; /* Initial position */
-  }
-  25% {
-    border-color: red blue purple #0ee21f; /* Move to the right */
+.sub a:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #a5a3a375; /* Change text color on hover */
+}
+
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
   50% {
-    border-color: red #0ee21f blue purple; /* Move to the bottom */
-  }
-  75% {
-    border-color: #0ee21f red blue purple; /* Move to the left */
-  }
-  100% {
-    border-color: red blue #0ee21f purple; /* Move to the top */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   }
 }
