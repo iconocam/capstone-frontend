@@ -3,9 +3,45 @@
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    padding: 5px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
     margin-top: 50px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px; 
+    line-height: 1.5;
+    width: 50%;
 };
+
+.INTJ img{
+    width:50%
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(to bottom, hsl(0, 87%, 3%), hsl(0, 88%, 3%));  */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    /* Add any other styles you prefer */
+    transition: background-color 0.3s ease; 
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+section {
+    padding: 20px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+@keyframes glow {
+    0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+} 

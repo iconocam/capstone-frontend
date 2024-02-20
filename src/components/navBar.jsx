@@ -1,28 +1,53 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navbar.css";
 import SubNavLinks from "./SubNavLinks";
+import { Link } from "react-router-dom";
+import Modal from "./Modal";
 
 const Navbar = () => {
+const [click, setClick ] = useState(false);
+const [modalOpen, setModalOpen]= useState(false)
+
+const clickHandler = () => {
+    setClick(!click)
+    setModalOpen(true)
+}
+
+const closeModal = () => setModalOpen(false);
+
+
 return (
     <div id="Navbar">
-        <div id="INFJ">
+    <div id="INFJ">
+    <div className= "menu-icon" onClick={clickHandler}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+    </div>
+    <Link to="/home">
+    <img src={'public/infjreacher.jpg'} alt="Logo" className="navbar-logo" />
+    </Link>
     <p>INFJ</p>
     </div>
-    <div className="sub">
-        <SubNavLinks text="Home" to="/home" />
+    
+    <Modal isOpen={modalOpen} onClose={closeModal}>
+        <ul>
+          <li>
+            <SubNavLinks text="Home" to="/home" />
+          </li>
+          <li>
+            <SubNavLinks text="You" to="/you" />
+          </li>
+          <li>
+            <SubNavLinks text="Mind" to="/mind" />
+          </li>
+          <li>
+            <SubNavLinks text="Us" to="/us" />
+          </li>
+        </ul>
+      </Modal>
     </div>
-    <div className="sub">
-        <SubNavLinks text="You" to="/you" />
-    </div>
-    <div className="sub">
-        <SubNavLinks text="Mind" to="/mind" />
-    </div>
-    <div className="sub">
-        <SubNavLinks text="Us" to="/us" />
-    </div>
-
-    </div>
-);
+  );
 };
 
 export default Navbar;

@@ -22,12 +22,25 @@
 
 #INFJ {
   border: 2px solid black;
-  background: linear-gradient(45deg, #3498db, #2ecc71); 
+  /* background: linear-gradient(45deg, #3498db, #2ecc71);  */
   color: #fff;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
+
+.navbar-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+
 .sub a {
   display: flex;
   justify-content: center;
@@ -41,12 +54,12 @@
   padding: 5px 10px; 
   transition: background-color 0.3s ease; 
   animation: glow 1.5s ease-in-out infinite;
-}
+} 
 
 .sub a:hover {
-  background-color: #333; /* Change background color on hover */
-  color: #a5a3a375; /* Change text color on hover */
-}
+  background-color: #333; 
+  color: #a5a3a375; 
+} 
 
 
 @keyframes glow {
@@ -56,4 +69,29 @@
   50% {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   }
+} 
+
+.menu-icon {
+margin-right: 20px;
+  cursor: pointer;
+}
+
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f5f5f5;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }

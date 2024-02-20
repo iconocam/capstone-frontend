@@ -9,6 +9,7 @@ import You from './pages/You'
 import Mind from './pages/Mind'
 import Us from '../src/pages/Us'
 import Navbar from './components/navBar'
+import Modal from './components/Modal'
 
 // Is  best practice to just make a home component or do i make a pages folder with home in it?
 
