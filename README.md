@@ -7,6 +7,7 @@ Made using MERN stack, MongoDB, React, NodeJS
  Project Built with React
 
 [![React](https://img.shields.io/badge/Made%20with-React-blue?logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-10.18-blue)](https://nodejs.org/)
 
 - React-Router is our main tool in this app as we use it to render most of what our app contains; all of our components and pages.
 *This Page Is Still Undergoing Maintenance*
