@@ -8,7 +8,7 @@ Made using MERN stack, MongoDB, React, NodeJS
 
 [![React](https://img.shields.io/badge/Made%20with-React-blue?logo=react)](https://reactjs.org/)
 
-## React-Router is our main tool in this app as we use it to render most of what our app contains; all of our components and pages.
+- React-Router is our main tool in this app as we use it to render most of what our app contains; all of our components and pages.
 *This Page Is Still Undergoing Maintenance*
 
 # Routes Here are the available paths
@@ -42,7 +42,7 @@ Made using MERN stack, MongoDB, React, NodeJS
 - People have abilities?!
 - Below that we leave the user with some thoughts to ponder upon.
 
-# Contribution
+
 
 Please feel free to let it be known any ideas that may have arose on your way out in our community!
 
