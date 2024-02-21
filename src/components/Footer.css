@@ -1,0 +1,26 @@
+.footer-container {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.footer-nav a:last-child {
+    margin-right: 0; 
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

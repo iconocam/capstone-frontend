@@ -66,7 +66,7 @@ const You = () => {
         {isVisible3 && (
             <>
             <p>ISXX</p>
-            <ol>Anaylst</ol>
+            <ol>Analyst</ol>
             </>)}
             </div>
             <div className='cards'>
