@@ -12,7 +12,7 @@ Made using MERN stack, MongoDB, React, NodeJS
 - React-Router is our main tool in this app as we use it to render most of what our app contains; all of our components and pages.
 *This Page Is Still Undergoing Maintenance*
 
-# Routes Here are the available paths
+# Routes 
 // http://localhost:5173/home
 // http://localhost:5173/you
 // http://localhost:5173/mind
