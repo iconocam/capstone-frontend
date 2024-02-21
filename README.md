@@ -18,7 +18,7 @@ Made using MERN stack, MongoDB, React, NodeJS
 // http://localhost:5173/us
 // http://localhost:5173/heropage
 
-# Usage
+# WebApp
 **Home** is the foundation of the INFJ and INTJ. This webapp is primarily curated towards INXX as we retrieve more data.
 - INFJ (1,5% of the population), INTJ (2.1%), ENTJ (1.8%) are statistically the rarest function structures in the world.
 - Unorthodox function structure
