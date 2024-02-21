@@ -3,11 +3,12 @@ import "./Navbar.css";
 import SubNavLinks from "./SubNavLinks";
 import { Link } from "react-router-dom";
 import Modal from "./Modal";
-
+// State for burgerMenu and modal interface
 const Navbar = () => {
 const [click, setClick ] = useState(false);
 const [modalOpen, setModalOpen]= useState(false)
 
+// Toggle modal interface
 const clickHandler = () => {
     setClick(!click)
     setModalOpen(true)
@@ -25,15 +26,18 @@ return (
         <div className="bar3"></div>
     </div>
     <Link to="/home">
-    <img src={'public/infjreacher.jpg'} alt="Logo" className="navbar-logo" />
+    <img src={'public/rainybg.jpg'} alt="Logo" className="navbar-logo" />
     </Link>
-    <p>INFJ</p>
+    
     </div>
     
     <Modal isOpen={modalOpen} onClose={closeModal}>
         <ul>
           <li>
-            <SubNavLinks text="Home" to="/home" />
+            <SubNavLinks text="Hero" to="/home" />
+          </li>
+          <li>
+            <SubNavLinks text="Home" to="/heropage" />
           </li>
           <li>
             <SubNavLinks text="You" to="/you" />

@@ -17,7 +17,7 @@ const PersonalityDisplay = ({data}) => {
         
             </ul>
         
-            <img src="public/infjlostwizard.jpg" alt="Image description" className="bottom-image" />
+            <img src="public/infjlostwizard.jpg" alt="Image description" className="middle-image" />
 
 
             <div>
@@ -48,7 +48,7 @@ const PersonalityDisplay = ({data}) => {
                 </div>
                 <b>Synergy</b>: While these potential synergies exist, it's essential to recognize that individual variations within each personality type play a significant role.
             </div>
-            {/* <img src="public/cognitionchart.png" alt="Image description" className="bottom-image" /> */}
+            <img src="public/allseeingeye.avif" alt="Image description" className="bottom-image" />
         </div>
     </section>
             </div>

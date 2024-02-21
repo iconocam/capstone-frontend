@@ -1,0 +1,85 @@
+.container {
+    text-align: center;
+}
+
+.container-items {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin: 0 10px; 
+}
+
+.quote-content,
+.quote2-content {
+  width: 48%; /* Adjust the width as needed */
+box-sizing: border-box;
+display: inline-block;
+vertical-align: top;
+}
+
+.quote-content {
+position: relative;
+max-width: 400px; 
+margin: 20px; 
+background-color: hsl(0, 15%, 5%);
+border-radius: 15px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: background-color 0.3s ease;
+overflow: hidden;
+} 
+.quote2-content {
+    position: relative;
+    max-width: 400px; 
+    margin: 20px; 
+    background-color: hsl(0, 15%, 5%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    }  
+.quote-content::before,
+.quote-content::after {
+content: '';
+position: absolute;
+height: 2px;
+width: 100%;
+position: relative; 
+overflow: hidden; 
+border: 1px solid transparent; 
+animation: lightRotation 4s linear infinite; 
+} 
+
+.quote2-content::before,
+.quote2-content::after {
+content: '';
+position: absolute;
+height: 2px;
+width: 100%;
+position: relative; 
+overflow: hidden; 
+border: 1px solid transparent; 
+animation: lightRotation 4s linear infinite; 
+} 
+
+@keyframes lightRotation {
+    0% {
+    border-color: red blue green purple; 
+    }
+    25% {
+    border-color: red blue purple #0ee21f; 
+    }
+    50% {
+    border-color: red #0ee21f blue purple;
+    }
+    75% {
+    border-color: #0ee21f red blue purple; 
+    }
+    100% {
+    border-color: red blue #0ee21f purple; 
+    }
+} 
+
