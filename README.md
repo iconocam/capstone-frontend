@@ -1,5 +1,6 @@
 # About The Project:
  Schemas of the Mind/ A Brain Analysis
+Made using MERN stack, MongoDB, React, NodeJS
 - The understanding of all three states is essential in gaining control of the totality of the self.
 - Brain Analysis informational dedicated mainly towards Advocate(INFJ) and INTJ(Architect), expanding upon others as progress is made.
 
