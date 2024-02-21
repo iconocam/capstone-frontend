@@ -9,6 +9,7 @@ import Mind from './pages/Mind'
 import Us from '../src/pages/Us'
 import Navbar from './components/navBar'
 import HeroPage from './pages/HeroPage'
+import Footer from './components/Footer'
 
 
 // Is  best practice to just make a home component or do i make a pages folder with home in it?
@@ -62,7 +63,7 @@ function App() {
       <Route path="/you" element ={<You />} />
 
         </Routes>
-        
+        <Footer />
         </div>
       </Router>
   
