@@ -1,5 +1,6 @@
 import './PersonalityDisplay.css'
 const PersonalityDisplay = ({data}) => {
+    // map over the data array return a list item (<ol>) 
     return(
         <div id= "card">
             <h2>Tip of the Iceberg</h2>

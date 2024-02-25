@@ -10,14 +10,12 @@
   overflow: hidden;
   transition: background-color 0.3s ease; 
 }
-
-#Navbar p {
-  font-size: 2em; 
-  font-weight: bold; 
-  color: #fcfbfbfb; 
-  margin-bottom: 10px;
-  animation: glow 1.5s ease-in-out infinite;
+a {
+  text-decoration: none;
+  color: #fff;
 }
+
+
 
 #INFJ {
   border: 2px solid black;
@@ -27,6 +25,7 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
+  background-image: url('https://media.istockphoto.com/id/637444690/photo/leaves-skeleton-background.jpg?s=612x612&w=0&k=20&c=MO_FI5Sge4zWhEkY9pykHtLe1dztKDWVD_TgeAKLzok=');
 }
 
 .navbar-logo {
@@ -94,3 +93,4 @@ margin-right: 20px;
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+

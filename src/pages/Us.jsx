@@ -55,8 +55,8 @@ const Us = () => {
         <p>"Our differences are the threads that weave the tapestry of understanding and connection."</p>
         </div>
         <div className="quote2-content">
-        <p>"The kaleidoscope of personalities forms a beautiful mosaic, reflecting the richness of human existence."</p>
-        <p>"Our differences are the threads that weave the tapestry of understanding and connection."</p>
+        <p>"True well-being is found not in the absence of challenges, but in the resilience and wisdom discovered amidst life's ebbs and flows."</p>
+        <p>"In the symphony of life, stability is the steady rhythm that allows us to dance gracefully through the unpredictable melodies of change."</p>
         </div>
         </div>
     

@@ -26,7 +26,8 @@ return (
         <div className="bar3"></div>
     </div>
     <Link to="/home">
-    <img src={'public/rainybg.jpg'} alt="Logo" className="navbar-logo" />
+      THE INFJ-Antilock
+    {/* <img src={'public/rainybg.jpg'} alt="Logo" className="navbar-logo" /> */}
     </Link>
     
     </div>
