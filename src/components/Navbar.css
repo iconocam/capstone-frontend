@@ -19,13 +19,13 @@ a {
 
 #INFJ {
   border: 2px solid black;
-  /* background: linear-gradient(45deg, #3498db, #2ecc71);  */
+  background: linear-gradient(45deg, #3498db, #2ecc71); 
   color: #fff;
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
-  background-image: url('https://media.istockphoto.com/id/637444690/photo/leaves-skeleton-background.jpg?s=612x612&w=0&k=20&c=MO_FI5Sge4zWhEkY9pykHtLe1dztKDWVD_TgeAKLzok=');
+  /* background-image: url('https://media.istockphoto.com/id/637444690/photo/leaves-skeleton-background.jpg?s=612x612&w=0&k=20&c=MO_FI5Sge4zWhEkY9pykHtLe1dztKDWVD_TgeAKLzok='); */
 }
 
 .navbar-logo {

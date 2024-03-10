@@ -3,6 +3,8 @@ import "./Navbar.css";
 import SubNavLinks from "./SubNavLinks";
 import { Link } from "react-router-dom";
 import Modal from "./Modal";
+
+
 // State for burgerMenu and modal interface
 const Navbar = () => {
 const [click, setClick ] = useState(false);
@@ -25,10 +27,11 @@ return (
         <div className="bar2"></div>
         <div className="bar3"></div>
     </div>
-    <Link to="/home">
-      THE INFJ-Antilock
-    {/* <img src={'public/rainybg.jpg'} alt="Logo" className="navbar-logo" /> */}
+    <Link to="/heropage">
+  
+    
     </Link>
+  
     
     </div>
     

@@ -1,47 +1,28 @@
 import React from "react"
 import "./HeroSection.css"
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import Community from "./Community";
+
+
 function HeroSection() {
-// const [username, setUsername]= useState('')
 
-// Username Input
-// const handleInputChange = (e) => {
-//     setUsername(e.target.value)
-// }
+
     return (
-        <div id="bckg">
-    <div className="hero-container">
-        {/*ANIMATED BACKGROUND VIDEO */}
-        {/* <video src="/video-2.mp4" autoPlay loop muted /> */}
-        <div id="testDiv">
-        <div style={{ display: 'inline-block', width: '50%', marginRight: '40px' }}>
-            <section>
-            The enigmatic nature of INFJs extends to their seemingly paradoxical qualities. Their deep-rooted idealism coexists with a pragmatic understanding of the world. This intricate balance between visionary thinking and grounded logic can leave others fascinated by the complexity of their thought processes.
-            </section>
-        </div>
-        <div style={{ display: 'inline-block', width: '40%', }}>
-            <ol>
-            <p>About being an INFJ; a perplexing and enigmatic analyzation- intuition based structures enforce a nuanced approach to problem-solving guiding the navigation of complex situations.</p>
-            {/* <li>Unorthodox</li>
-            <li>Unusual</li>
-            <li>Unreal</li> */}
-            </ol>
-        </div>
-        <img src="https://i.etsystatic.com/40643086/r/il/4b3936/5507123093/il_fullxfull.5507123093_9wk6.jpg" />
-        </div>
-    </div>
-      {/* Add your additional components like Community here */}
-    <section id ="apple">
-    A
-    b
-    c
-    d
-    e
-    </section>
-    </div>
-);
-}
+        <div class="container">
+        <div class="header">
+            <h1><img src="data:image/jpeg;base64,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"/></h1>
+    
 
+        </div>
+        <div class="content">
+            <div class="image-container">
+                {/* <img src="rainybg4.jpg" alt="Your Image"/> */}
+            </div>
+        
+            <div class="text-container">
+                <h2>INFJ</h2>
+                <p>This depiction is embedded for solely no reason at all. Perhaps it will evoke some semblance of sadness or be that of a catalyst for your mind, who knows what the universe has to offer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut necessitatibus mollitia animi nesciunt quia a repellat optio commodi! Beatae doloremque cupiditate, architecto vero quasi voluptatibus explicabo facilis unde culpa. Rem fuga quaerat atque nostrum assumenda? Reiciendis dolore, ratione neque ad fuga, cum voluptate doloremque provident eum, laborum commodi iusto praesentium! Facilis excepturi totam animi omnis obcaecati praesentium atque minima quia! Voluptas doloremque reprehenderit earum iste voluptatem, possimus fugiat, quia necessitatibus deserunt perspiciatis, corrupti atque saepe distinctio consequuntur beatae vero explicabo fugit deleniti vel libero officia consectetur ratione. Omnis rem error, repudiandae in alias, autem dolorem dolore consectetur vitae vel praesentium excepturi perspiciatis consequatur eveniet quia mollitia expedita reprehenderit non ipsa quibusdam a blanditiis! Corrupti, saepe mollitia! Placeat saepe sit commodi deserunt aut, rerum maiores perferendis repellendus totam quasi magnam quas veniam pariatur eos error. Maxime, doloremque mollitia. Fugiat assumenda accusantium voluptas quaerat quos vel eaque delectus maiores, blanditiis quae culpa laborum sunt itaque qui incidunt sed, placeat alias illum pariatur corporis in voluptate eligendi quisquam odit. Accusantium vel tenetur commodi reiciendis velit! Possimus incidunt dolores quibusdam voluptas laborum error aperiam deleniti, necessitatibus vitae culpa excepturi officia molestiae, ullam rerum sint quaerat minima, nihil debitis pariatur! Repudiandae, ad ipsa. Ducimus, iure.</p>
+            </div>
+        </div>
+    </div>
+    )
+}
 export default HeroSection;

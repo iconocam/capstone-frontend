@@ -1,80 +1,106 @@
-/* video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
+.container {
+    display: flex;
+    
+    padding: 10px;
+    /* border: 2px solid rgb(18, 179, 85);
+    border-radius: 8px; */
+    height: 100vh;
+    /* background-color: grey; */
+    /* overflow: hidden; 
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    animation: backgroundAnimation 5s infinite alternate; */
+}
+
+/* @keyframes backgroundAnimation {
+    from {
+        background: linear-gradient(45deg, #0dd190, #00ffffd2);
+    }
+    to {
+        background: linear-gradient(45deg, #0dd190, #00ffffd2);
+    }
 } */
 
+#text {
+    font-size: 16px;
+    flex: 1;
 
-#testDiv{
+}
 
-    
-    background-color: transparent;
-    border: 4px solid transparent;
+#text strong {
+    font-size: 32px;
+    font-style: italic;
+    padding: 4px;
+    color: white;
+}
+
+#button {
+    margin-top: 20px; /* Add some margin to the top of the button for spacing */
+    padding: 10px 20px;
+    background-color: antiquewhite;
     border-radius: 8px;
-    max-width:max-content;
-    margin: auto;
+}
+
+button:hover {
+    color: seagreen;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: larger;
-}
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
-#testDiv > ol{
-    font-family:monospace;
-    color: #333;
-
-}
-.hero-container{
-
-border-radius: 8px;
-max-width: 50%;
-background-image: url("https://i.etsystatic.com/40643086/r/il/4b3936/5507123093/il_fullxfull.5507123093_9wk6.jpg");
-}
-
-img {
-    max-width: 50%;
-    max-height: 50%;
-}
-
-div > ol > p {
-    border-radius: 8px;
-    position: relative; /* Ensure position is relative for the absolute positioning of the light */
-    overflow: hidden; /* Hide overflowing light */
-    border: 3px solid transparent; /* Set initial border color to transparent */
-    background-color: hsl(0, 8%, 3%);
-}
-section {
+  .text-container {
+    justify-content: center;
+    align-content: center;
     
-    border-radius: 8px;
-    overflow: hidden; /* Hide overflowing light */
-    border: 3px solid transparent; /* Set initial border color to transparent */
-    background-color: #030303;}
-/* @keyframes lightRotation {
-    0% {
-    border-color: red blue green purple;
-    }
-    25% {
-    border-color: red blue purple #0ee21f; 
-    }
-    50% {
-    border-color: red #0ee21f blue purple; 
-    }
-    75% {
-    border-color: #0ee21f red blue purple; 
-    }
-    100% {
-    }
-} */
+  }
 
-#apple, .hero-container {
-    display: inline-block;
-}
-
-#apple {
-    margin-bottom: 600px;
-    margin-left: 40px;
-}
-
-/* #bckg{
-background-image: url("https://i.etsystatic.com/40643086/r/il/4b3936/5507123093/il_fullxfull.5507123093_9wk6.jpg");
-} */
+  .text-container p {
+  padding: 10px;
+  margin: auto;
+  
+  }
